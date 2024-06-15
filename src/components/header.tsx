@@ -38,8 +38,8 @@ export default function Header() {
       className={`h-14 fixed bg-[#0e0e0e00] w-full z-[50]  ${roboto.className}`}
     >
       <div className="w-[1850px] mx-auto flex justify-between items-center h-full">
-        <Link href="/" className={`mx-2 hover:bg-[#ffffff9c] p-1 rounded`}>
-        <img src="/gallery/logo/logo.jpg"  alt=""  className="w-12 h-12"/>
+        <Link href="/" className={`mx-2 hover:bg-[#ffffff9c] p-0.8 rounded`}>
+          <img src="/gallery/logo/logo.jpg" alt="" className="p-1 w-12 h-12" />
         </Link>
         <nav className="">
           <ul className="flex ">

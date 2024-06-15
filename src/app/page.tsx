@@ -12,15 +12,11 @@ import { Roboto } from "next/font/google";
 import { root } from "postcss";
 
 const images = [
-  "/gallery/photography/1.jpg",
-  "/gallery/photography/2.jpg",
-  "/gallery/photography/3.JPG",
-  "/gallery/photography/4.JPG",
-  "/gallery/photography/5.JPG",
-  "/gallery/photography/7.JPG",
-  "/gallery/photography/8.JPG",
-  "/gallery/photography/9.JPG",
-  "/gallery/photography/10.JPG",
+  "/gallery/photography/14.jpg",
+  "/gallery/photography/17.jpg",
+  "/gallery/photography/18.jpg",
+  "/gallery/photography/10.jpg",
+  "/gallery/photography/11.png",
 ];
 
 const roboto = Roboto({
@@ -37,7 +33,7 @@ export default function Home() {
       <ImagesSlider className="h-screen" images={images}>
         <div className="bg-black flex justify-center items-center w-2/3">
           <div className="h-full w-full flex flex-col p-8 items-start justify-center overflow-hidden py-8 z-50">
-            <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+            <BoxReveal boxColor={"#5046e6"} duration={0.7}>
               <div className={`text-[3.5rem] font-semibold ${roboto.className}`}>
                 <SparklesText text={`Welcome To My Portfolio.`} />
               </div>
@@ -47,7 +43,7 @@ export default function Home() {
               <h2 className={`mt-[.5rem] text-[1.2rem] ${roboto.className}`}>
                 Hi there! I'm Aagash Nadarajah, a passionate Photographer. With
                 a keen eye for detail and a drive for excellence.
-                <span className="text-[#ffffff]">
+                <span className="text-[#bfb9f0]">
                   {" "}
                   Explore my work, learn about my journey, and feel free to
                   reach out for collaborations or inquiries.{" "}
@@ -55,7 +51,7 @@ export default function Home() {
               </h2>
             </BoxReveal>
 
-            <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+            <BoxReveal boxColor={"#5046e6"} duration={0.7}>
               <>
                 <Button className="mt-[1.6rem] bg-[#5046e6]">Contact Me</Button>
                 <Button className="mt-[1.6rem] bg-[#5046e6] ml-2">
