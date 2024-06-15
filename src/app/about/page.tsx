@@ -1,11 +1,12 @@
 import React from "react";
-import Slider from "@/components/gallery/slider";
+import Link from "next/link";
 
-export default function page() {
+
+export default function about() {
   return (
     <div>
       <div className="w-full h-screen">
-        <Slider />
+      
       </div>
    
       

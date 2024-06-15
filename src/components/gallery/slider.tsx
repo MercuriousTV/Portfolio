@@ -5,8 +5,10 @@ import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import 'swiper/css/effect-fade';
+import 'swiper/css/effect-flip';
 
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, EffectFade, EffectFlip } from "swiper/modules";
+import { effectInit } from "swiper/effect-utils";
 
 export default function Slider() {
   return (
@@ -21,7 +23,7 @@ export default function Slider() {
     
       }}
       loop={true}
-      modules={[Autoplay, Pagination, Navigation, EffectFade]}
+      modules={[Autoplay, Pagination, Navigation, EffectFade, EffectFlip]}
       effect="fade"
       className="h-full w-full"
     >
