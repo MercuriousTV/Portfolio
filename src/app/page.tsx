@@ -23,9 +23,7 @@ const roboto = Roboto({
   weight: "500",
   subsets: ["latin"],
   display: "swap",
-})
-
-
+});
 
 export default function Home() {
   return (
@@ -34,7 +32,9 @@ export default function Home() {
         <div className="bg-black flex justify-center items-center w-2/3">
           <div className="h-full w-full flex flex-col p-8 items-start justify-center overflow-hidden py-8 z-50">
             <BoxReveal boxColor={"#5046e6"} duration={0.7}>
-              <div className={`text-[3.5rem] font-semibold ${roboto.className}`}>
+              <div
+                className={`text-[3.5rem] font-semibold ${roboto.className}`}
+              >
                 <SparklesText text={`Welcome To My Portfolio.`} />
               </div>
             </BoxReveal>
@@ -53,10 +53,17 @@ export default function Home() {
 
             <BoxReveal boxColor={"#5046e6"} duration={0.7}>
               <>
-                <Button className="mt-[1.6rem] bg-[#5046e6]">Contact Me</Button>
-                <Button className="mt-[1.6rem] bg-[#5046e6] ml-2">
-                  Read More
+                <a href="/contact">
+                  <Button className="mt-[1.6rem] bg-[#5046e6]">
+                    Contact Me
+                  </Button>
+                </a>
+
+               <a href="/projects">
+               <Button className="mt-[1.6rem] bg-[#5046e6] ml-2">
+                  Portfolio
                 </Button>
+               </a>
               </>
             </BoxReveal>
           </div>{" "}

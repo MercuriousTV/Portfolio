@@ -24,7 +24,7 @@ export default function Header() {
       href: "/about",
     },
     {
-      label: "Projects",
+      label: "Portfolio",
       href: "/projects",
     },
     {
@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header
-      className={`h-14 fixed bg-[#0e0e0e00] w-full z-[50]  ${roboto.className}`}
+      className={`fixed top-0 left-0 h-14 bg-[#11111193] backdrop-blur-xl w-full ${roboto.className}`}
     >
       <div className="w-[1850px] mx-auto flex justify-between items-center h-full">
         <Link href="/" className={`mx-2 hover:bg-[#ffffff9c] p-0.8 rounded`}>
@@ -43,8 +43,11 @@ export default function Header() {
         </Link>
         <nav className="">
           <ul className="flex ">
-            {menuItems.map((item) => (
-              <li className={`mx-2 hover:bg-[#ffffff9c] p-1 rounded`}>
+            {menuItems.map((item, index) => (
+              <li
+                key={index}
+                className={`mx-2 hover:bg-[#ffffff9c] p-1 rounded`}
+              >
                 <Link href={item.href}>{item.label}</Link>
               </li>
             ))}
