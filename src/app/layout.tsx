@@ -20,7 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Header />
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -29,8 +28,10 @@ export default function RootLayout({
           disableTransitionOnChange        >
           {children}
         </ThemeProvider>
-      </body>
+        <Header/>
       <StickyFooter/>
+      </body>
+      
     </html>
   );
 }

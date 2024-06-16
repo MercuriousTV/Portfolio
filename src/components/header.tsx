@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 h-14 bg-[#11111193] backdrop-blur-xl w-full ${roboto.className}`}
+      className={`fixed top-0 left-0 h-14 bg-[#1b1b1b93] backdrop-blur-xl w-full ${roboto.className}`}
     >
       <div className="w-[1850px] mx-auto flex justify-between items-center h-full">
         <Link href="/" className={`mx-2 hover:bg-[#ffffff9c] p-0.8 rounded`}>

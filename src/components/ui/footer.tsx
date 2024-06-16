@@ -11,7 +11,7 @@ const roboto = Roboto({
 
 const StickyFooter = (): JSX.Element => {
   return (
-    <footer className="bg-[#070707b7] text-gray-300 py-4 mt-auto">
+    <footer className="bg-[#18171793] text-gray-300 py-4 mt-auto">
       <div className="container mx-auto flex flex-wrap justify-between">
         <div className="w-full md:w-1/3 px-4 mb-6 md:mb-0">
           <h2 className={`text-white text-2xl font-bold ${roboto.className}`}>
